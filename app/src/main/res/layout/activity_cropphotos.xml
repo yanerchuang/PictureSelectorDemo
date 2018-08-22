@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical">
+
+    <com.isseiaoki.simplecropview.CropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_crop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        custom:scv_frame_color="@android:color/white"
+        custom:scv_frame_stroke_weight="1dp"
+        custom:scv_guide_color="@android:color/white"
+        custom:scv_guide_show_mode="show_on_touch"
+        custom:scv_guide_stroke_weight="1dp"
+        custom:scv_handle_color="@android:color/white"
+        custom:scv_handle_show_mode="show_always"
+        custom:scv_handle_size="7dp"
+        custom:scv_min_frame_size="50dp"
+        custom:scv_overlay_color="#434343"
+        custom:scv_touch_padding="5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/selector_chevron_left"
+            android:onClick="onClick" />
+
+
+        <Button
+            android:id="@+id/btn_rotate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_rotate_right_90_degree"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_check"
+            android:onClick="onClick" />
+
+    </RelativeLayout>
+
+</LinearLayout>

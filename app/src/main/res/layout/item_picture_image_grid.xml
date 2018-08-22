@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ywj.pictureselectordemo.view.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@color/grey"
+        android:src="@drawable/image_placeholder"
+        />
+
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:button="@drawable/selector_checkbox" />
+</com.ywj.pictureselectordemo.view.SquareRelativeLayout>
